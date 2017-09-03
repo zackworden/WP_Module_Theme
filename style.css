@@ -1,0 +1,96 @@
+/*
+Theme Name: Modular Theme Demo
+Author: Zack Worden
+Author URI: http://www.zackworden.com/
+Description: This is a theme demonstrating the "Modular WordPress" article in action. Please read: http://www.zackworden.com/writing/modular-wordpress-theme-structure-development/ for context.
+Version: 1.0
+*/
+
+/*
+Table Of Contents (this is eventually how we manually concatenated our files, using each CSS file as a 'chapter' in the TOC)
+
+001 GLOBAL
+002 SHARED
+003 SINGLE
+	003.01 SINGLE-POST
+	003.02 SINGLE-PRESSRELEASE
+004 ARCHIVE / CATEGORY / TAG
+005 HOME / FRONT PAGE
+
+*/
+
+
+/*
+001 GLOBAL
+(Site / page structure, including our CSS grid, global media queries, and generally anything necessary for everything else on the site.)
+*/
+	#siteHeader {
+
+	}
+	#siteFooter {
+
+	}
+	#mainNavigation {
+
+	}
+/*
+002 SHARED
+(Styles and rules that span multiple templates, or have the potential to do so.)
+*/
+	.genericTeaser_Listed {
+
+	}
+	.genericTeaser_Tiled {
+
+	}
+	.floatingAd {
+
+	}
+/*
+003 SINGLE
+(Anything used by the single template, with additional 'chapters' added for post-types (and partials) when necessary.)
+*/
+	/*
+	003.01 SINGLE-POST
+	*/
+		.single h1,
+		.single h2,
+		.single h3,
+		.single h4,
+		.single h5,
+		.single h6 {
+
+		}
+		.single .sidebar {
+
+		}
+	/*
+	003.02 SINGLE-PRESSRELEASE
+	*/
+		.single.pressrelease .disclaimer {
+			
+		}
+		.single.pressrelease .sidebar {
+
+		}
+/*
+004 ARCHIVE / CATEGORY / TAG
+(All styles for archive pages of any kind, with additional 'chapters' added as necessary.)
+*/
+	.archive .header {
+
+	}
+	.archvie .footer {
+
+	}
+/*
+005 HOME / FRONT PAGE
+(Typically, home.php requires specific styles that aren't repeated elsewhere.)
+*/
+	.home .latestNews {
+
+	}
+	.home .didYouMiss {
+
+	}
+
